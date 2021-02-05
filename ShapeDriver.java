@@ -6,18 +6,18 @@ import java.util.ArrayList;
  */
 public class ShapeDriver{
     public static void main(String[] args){
-        ArrayList<AbstractShape> shapeList = new ArrayList<>();
+        ArrayList<AbstractShape> shapes = new ArrayList<>();
 
         //creates a Rectanle, Circle and Triangel and then adds them to the ArrayList
-        shapeList.add(new MyRectangle(100, 100, 150, 75));
-        shapeList.add(new MyCircle(200, 200, 50));
-        shapeList.add(new MyTriangle(300, 300, 150, 75));
+        shapes.add(new MyRectangle(100, 100, 150, 75));
+        shapes.add(new MyCircle(200, 200, 50));
+        shapes.add(new MyTriangle(300, 300, 150, 75));
 
         /* Uses a for each loop to cycle through the array list
         *  Then checks if the abstract shap is an instance of a Rectangle, Circle or Triangle
         *  Cast the object down to call the special getCalc method of for each class
         */
-        for (AbstractShape aS : shapeList) {
+        for (AbstractShape aS : shapes) {
             if (aS instanceof MyRectangle) {
                 System.out.printf("%s\nArea: %,.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyRectangle) aS).getRectCalc());
             }
@@ -28,6 +28,6 @@ public class ShapeDriver{
                 System.out.printf("%s\nArea: %,.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyTriangle) aS).getTriCalc());   
             }
         }
-        System.out.println("Total Shapes: " + shapeList.size());
+        System.out.println("Total Shapes: " + shapes.size());
     }
 }
