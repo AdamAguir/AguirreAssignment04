@@ -33,7 +33,7 @@ public class MyTriangle extends AbstractShape{
     }
     @Override
     public String toString() {
-        return "[base=" + base + ", height=" + height + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
+        return "MyTriangle [base=" + base + ", height=" + height + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 
     

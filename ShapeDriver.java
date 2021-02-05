@@ -1,5 +1,9 @@
 import java.util.ArrayList;
-
+/**
+ * @author: Adam Aguirre
+ * Date: 2/4/21
+ * Assignment 3
+ */
 public class ShapeDriver{
     public static void main(String[] args){
         ArrayList<AbstractShape> shapeList = new ArrayList<>();
@@ -15,13 +19,13 @@ public class ShapeDriver{
         */
         for (AbstractShape aS : shapeList) {
             if (aS instanceof MyRectangle) {
-                System.out.printf("MyRectangle %s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyRectangle) aS).getRectCalc());
+                System.out.printf("%s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyRectangle) aS).getRectCalc());
             }
             if (aS instanceof MyCircle) {
-                System.out.printf("MyCircle %s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyCircle) aS).getCirCalc());
+                System.out.printf("%s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyCircle) aS).getCirCalc());
             }
             if (aS instanceof MyTriangle) {
-                System.out.printf("MyTriangle %s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyTriangle) aS).getTriCalc());   
+                System.out.printf("%s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyTriangle) aS).getTriCalc());   
             }
         }
         System.out.println("Total Shapes: " + shapeList.size());

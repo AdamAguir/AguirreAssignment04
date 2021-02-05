@@ -35,7 +35,7 @@ public class MyRectangle extends AbstractShape{
 
     @Override
     public String toString() {
-        return "[Width=" + width + ", length=" + length + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
+        return "MyRectangle [Width=" + width + ", length=" + length + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 
 }

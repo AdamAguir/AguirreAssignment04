@@ -24,6 +24,6 @@ public class MyCircle extends AbstractShape{
     }
     @Override
     public String toString() {
-        return "[Radius=" + rad + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
+        return "MyCircle [Radius=" + rad + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 }
