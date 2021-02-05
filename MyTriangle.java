@@ -10,8 +10,7 @@ public class MyTriangle extends AbstractShape{
     }
 
     public String getTriCalc(){
-        //TODO
-        return null;
+        return "Multiply (base * height) / 2";
     }
 
     //getters and setters
@@ -34,8 +33,7 @@ public class MyTriangle extends AbstractShape{
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        return "[base=" + base + ", height=" + height + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 
     

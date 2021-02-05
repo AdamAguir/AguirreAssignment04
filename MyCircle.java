@@ -2,13 +2,12 @@ public class MyCircle extends AbstractShape{
     private int rad;
 
     public MyCircle(int x, int y, int r){
-
         super(x, y);
         rad = r;
     }
     
     public String getCirCalc(){
-        \\TODO
+        //TODO
         return null;
     }
     //getters and setters

@@ -1,3 +1,44 @@
 public class MyRectangle extends AbstractShape{
+    private double width;
+    private double length;
+
+    public MyRectangle(int x, int y, double w, double l){
+        super(x, y);
+        width = w;
+        length = l;
+    }
+
+    public String getRectCalc(){
+        //TODO 
+        return null;
+    }
+
+    //getters and setters
+    public double getWidth() {
+        return width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    @Override
+    public double getArea() {
+        // TODO Auto-generated method stub
+        return width * length;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
+    }
 
 }
