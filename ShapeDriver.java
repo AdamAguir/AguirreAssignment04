@@ -24,6 +24,6 @@ public class ShapeDriver{
                 System.out.printf("MyTriangle %s\nArea: %.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyTriangle) aS).getTriCalc());   
             }
         }
-
+        System.out.println("Total Shapes: " + shapeList.size());
     }
 }
