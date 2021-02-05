@@ -9,8 +9,7 @@ public class MyRectangle extends AbstractShape{
     }
 
     public String getRectCalc(){
-        //TODO 
-        return null;
+        return "Multiply width * length";
     }
 
     //getters and setters
@@ -31,14 +30,12 @@ public class MyRectangle extends AbstractShape{
 
     @Override
     public double getArea() {
-        // TODO Auto-generated method stub
         return width * length;
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        return "[Width=" + width + ", length=" + length + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 
 }

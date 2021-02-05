@@ -1,4 +1,5 @@
 public class MyCircle extends AbstractShape{
+    
     private int rad;
 
     public MyCircle(int x, int y, int r){
@@ -7,8 +8,7 @@ public class MyCircle extends AbstractShape{
     }
     
     public String getCirCalc(){
-        //TODO
-        return null;
+        return "Multiply Math.PI * Radius Squared";
     }
     //getters and setters
     public int getRad(){
@@ -20,12 +20,10 @@ public class MyCircle extends AbstractShape{
 
     @Override
     public double getArea() {
-        
-        return (rad * rad * 3.14);
+        return (rad * rad * Math.PI);
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        return "[Radius=" + rad + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 }
