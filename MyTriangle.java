@@ -1,3 +1,8 @@
+/**
+ * @author: Adam Aguirre
+ * @Date: 2/4/21
+ *  Assignment 4
+ */
 public class MyTriangle extends AbstractShape{
     
     private double base;

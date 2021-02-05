@@ -1,3 +1,8 @@
+/**
+ * @author: Adam Aguirre
+ * Date: 2/4/21
+ * Assignment 4
+ */
 public class MyRectangle extends AbstractShape{
     private double width;
     private double length;
