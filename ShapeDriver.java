@@ -12,6 +12,7 @@ public class ShapeDriver{
         shapes.add(new MyRectangle(100, 100, 150, 75));
         shapes.add(new MyCircle(200, 200, 50));
         shapes.add(new MyTriangle(300, 300, 150, 75));
+        shapes.add(new MySquare(400, 400, 50));
 
         /* Uses a for each loop to cycle through the array list
         *  Then checks if the abstract shap is an instance of a Rectangle, Circle or Triangle
@@ -27,7 +28,16 @@ public class ShapeDriver{
             if (aS instanceof MyTriangle) {
                 System.out.printf("%s\nArea: %,.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MyTriangle) aS).getTriCalc());   
             }
+            if (aS instanceof MySquare) {
+                System.out.printf("%s\nArea: %,.2f\n%s\n\n", aS.toString(), aS.getArea(), ((MySquare) aS).getSqrCalc());   
+            }
         }
         System.out.println("Total Shapes: " + shapes.size());
+
+        for (AbstractShape abstractShape : shapes) {
+            abstractShape.stretchBy(.1); 
+            abstractShape.move(400, 400);         
+        }
+        shapes.forEach((s) -> System.out.println(s.toString()));
     }
 }

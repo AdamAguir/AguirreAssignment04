@@ -4,7 +4,7 @@
  * Assignment 4
  */
 
-public abstract class AbstractShape{
+public abstract class AbstractShape implements ShapeInterface{
 
     protected int xPos;
     protected int yPos;

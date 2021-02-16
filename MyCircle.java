@@ -5,9 +5,9 @@
  */
 public class MyCircle extends AbstractShape{
     
-    private int rad;
+    private double rad;
 
-    public MyCircle(int x, int y, int r){
+    public MyCircle(int x, int y, double r){
         super(x, y);
         rad = r;
     }
@@ -16,10 +16,10 @@ public class MyCircle extends AbstractShape{
         return "Multiply Math.PI * Radius Squared";
     }
     //getters and setters
-    public int getRad(){
+    public double getRad(){
         return rad;
     }
-    public void setRad(int r){
+    public void setRad(double r){
         rad = r;
     }
 
@@ -30,5 +30,22 @@ public class MyCircle extends AbstractShape{
     @Override
     public String toString() {
         return "MyCircle [Radius=" + rad + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
+    }
+
+    @Override
+    public void move(int x, int y) {
+        super.setxPos(super.getxPos() + x);
+        super.setyPos(super.getyPos() + y);
+    }
+
+    @Override
+    public void stretchBy(double factor) {
+        factor = factor + 1;
+        setRad(getRad() * factor);
+    }
+
+    @Override
+    public String draw() {
+        return "Draws a circle";
     }
 }

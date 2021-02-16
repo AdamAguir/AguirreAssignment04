@@ -41,5 +41,23 @@ public class MyTriangle extends AbstractShape{
         return "MyTriangle [base=" + base + ", height=" + height + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 
+    @Override
+    public void move(int x, int y) {
+        super.setxPos(super.getxPos() + x);
+        super.setyPos(super.getyPos() + y);       
+    }
+
+    @Override
+    public void stretchBy(double factor) {
+        factor = factor + 1;
+        setBase(getBase() * factor);
+        setHeight(getHeight() * factor);
+    }
+
+    @Override
+    public String draw() {
+        return "Draws a Triangle";
+    }
+
     
 }

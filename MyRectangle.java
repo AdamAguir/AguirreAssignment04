@@ -43,4 +43,23 @@ public class MyRectangle extends AbstractShape{
         return "MyRectangle [Width=" + width + ", length=" + length + ", xPos=" + getxPos() + ", yPos=" + getyPos() + "]";
     }
 
+    @Override
+    public void move(int x, int y) {
+        super.setxPos(super.getxPos() + x);
+        super.setyPos(super.getyPos() + y);
+
+    }
+
+    @Override
+    public void stretchBy(double factor) {
+        factor = factor + 1;
+        setLength(getLength() * factor);
+        setWidth(getWidth() * factor);
+    }
+
+    @Override
+    public String draw() {
+        return "Draws Rectangle";
+    }
+
 }
